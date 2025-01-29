@@ -1,0 +1,107 @@
+.dashboard {
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #333;
+      margin: 0;
+    }
+
+    .go-to-list-button {
+      text-align: right;
+
+      a {
+        text-decoration: none;
+      }
+
+      button {
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+          background-color: #357abd;
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 16px;
+  }
+
+  .favorites-list {
+    margin-top: 24px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+  
+
+      li {
+        display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        p {
+          margin: 4px 0;
+        }
+
+        button {
+          background-color: #e74c3c;
+          padding: 6px 12px;
+          font-size: 0.875rem;
+          border-radius: 4px;
+          color: white;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+
+          &:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+          }
+
+          &:active {
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    color: #777;
+    text-align: left !important;
+  }
+}

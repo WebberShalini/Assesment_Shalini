@@ -1,0 +1,133 @@
+.list-page {
+  padding: 24px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+
+  .back-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+
+    button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+
+      &:hover {
+        background-color: #357abd;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(2px);
+      }
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-top: 12px;
+      }
+
+      .add-favorite-btn {
+        background-color: #4a90e2;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        border-radius: 4px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 12px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+
+        max-width: 200px;
+        width: auto;
+        text-align: center;
+
+        &:hover {
+          background-color: #357abd;
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(2px);
+        }
+      }
+
+      .remove-favorite-btn {
+        background-color: #e74c3c;
+        padding: 6px 12px;
+        font-size: 0.875rem;
+        border-radius: 4px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        margin-top: 8px;
+        max-width: 200px;
+        width: auto;
+        text-align: center;
+
+        &:hover {
+          background-color: #c0392b;
+          transform: translateY(-2px);
+        }
+
+        &:active {
+          transform: translateY(2px);
+        }
+      }
+    }
+  }
+  p {
+    font-size: 1rem;
+    color: #777;
+    text-align: left !important;
+    font-weight: 500;
+  }
+
+  .loading {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  .scroll-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+  }
+}
